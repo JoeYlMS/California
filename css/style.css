@@ -1,0 +1,279 @@
+@import "owl.carousel.css";
+@import "owl.theme.default.min.css";
+@import "bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+.container {
+  max-width: 1295px;
+}
+
+.hover {
+  transition: 0.3s;
+}
+.hover:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+.font-58px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.font-42px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  color: #000000;
+}
+
+.font-32px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.font-28px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.font-22px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.font-14px-RP {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.font-24px-I {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.font-22px-I {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.font-16-I {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.font-14px-I {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.font-13px-I {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4B4B;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+.first-section .container {
+  margin-bottom: 75px;
+}
+.first-section .container .slide-one .d-flex {
+  background: #DCE5E2;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.first-section .container .slide-one .d-flex .text-box {
+  padding-left: 56px;
+  max-width: 644px;
+}
+.first-section .container .slide-one .d-flex .text-box h1 {
+  padding-bottom: 19px;
+}
+.first-section .container .slide-one .d-flex .text-box p {
+  padding-bottom: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.first-section .container .slide-one .d-flex .text-box a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  padding: 14px 53px;
+  max-width: 170px;
+}
+.first-section .container .slide-one .d-flex div img {
+  display: block;
+  width: 100%;
+}
+.first-section .container .slide-one .owl-nav .owl-prev {
+  position: absolute;
+  top: 49%;
+  left: 1%;
+}
+.first-section .container .slide-one .owl-nav .owl-prev:before {
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px;
+}
+.first-section .container .slide-one .owl-nav .owl-next {
+  position: absolute;
+  top: 49%;
+  right: 1%;
+}
+.first-section .container .slide-one .owl-nav .owl-next:before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px;
+}
+.first-section .container .slide-one .owl-dots {
+  position: absolute;
+  bottom: 3%;
+  left: 20%;
+  width: 100%;
+}
+.first-section .container .slide-one .owl-dots .owl-dot {
+  width: 17%;
+  margin: 0 10px;
+  height: 3px;
+  background-color: black;
+}
+.first-section .container .slide-one .owl-dots .owl-dot.active {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #3949b2;
+}
+
+.shop-offers {
+  padding-bottom: 100px;
+}
+.shop-offers .container .font-42px-RP {
+  margin-bottom: 9px;
+}
+.shop-offers .container .font-13px-RP {
+  margin: 0 auto 55px;
+  max-width: 628px;
+}
+.shop-offers .container .row .categories .categories-box-1 .font-32px-RP {
+  max-width: 192px;
+}
+.shop-offers .container .row .position-relative {
+  top: 22px;
+}
+
+.top-items .container {
+  margin-bottom: 74px;
+}
+.top-items .container .row .card {
+  transition: 0.6s;
+}
+.top-items .container .row .card:hover {
+  transform: scale(1.1);
+}
+.top-items .container .row .card-body {
+  padding: 9px 0 0 0;
+}
+
+.best-around .container {
+  margin-bottom: 75px;
+}
+.best-around .container .row .card {
+  border-radius: 16px;
+  background-color: #F8F9FA;
+}
+.best-around .container .row .card .m-auto {
+  max-width: 295px;
+}
+
+.suggestions .container .row .btn-after:after {
+  content: "";
+  background-image: url("../images/arrow.svg");
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+}
+
+.looking .container .row form {
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
+}
+.looking .container .row form .form-box {
+  height: 60px;
+}
+.looking .container .row form .form-box .icon:before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 20px;
+  display: block;
+  color: black;
+}
+.looking .container .row form .form-box input {
+  background: #F8F9FA;
+}
+.looking .container .row form .col-lg-5 .btn {
+  padding: 12px 22px;
+  background: white;
+}
+.looking .container .row .never-miss {
+  background: #DCE5E2;
+  border-radius: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
