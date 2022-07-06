@@ -250,7 +250,7 @@ header {
   background-color: #F8F9FA;
 }
 .best-around .container .row .card .card-body .text-box a {
-  width: 190px;
+  max-width: 190px;
 }
 .best-around .container .row .card .m-auto {
   max-width: 295px;
