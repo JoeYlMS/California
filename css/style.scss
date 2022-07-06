@@ -6,6 +6,42 @@
 $Inter: 'Inter', sans-serif;
 $Readex: 'Readex Pro', sans-serif;
 
+@mixin lg{
+  @media (screen and max-width: 1024px){
+    @content
+  }
+}
+
+@mixin lg_2{
+  @media (screen and max-width: 900px){
+    @content
+  }
+}
+
+@mixin md{
+  @media (screen and max-width: 900px){
+    @content
+  }
+}
+
+@mixin sm{
+  @media (screen and max-width: 670px){
+    @content
+  }
+}
+
+@mixin sm-577{
+  @media (screen and max-width: 577px){
+    @content
+  }
+}
+
+@mixin mob{
+  @media (screen and max-width: 414px){
+    @content
+  }
+}
+
 .container {
   max-width: 1295px;
 }
@@ -26,6 +62,15 @@ $Readex: 'Readex Pro', sans-serif;
   font-size: 58px;
   line-height: 70px;
   color: #000000;
+  @include lg{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include md{
+    font-size: 32px;
+    line-height: 38px;
+  }
+
 }
 
 .font-42px-RP {
@@ -129,6 +174,7 @@ header {
 .first-section {
   .container {
     .slide-one {
+      position: relative;
       .d-flex {
         background: #DCE5E2;
         border-radius: 32px;
@@ -137,49 +183,37 @@ header {
         .text-box {
           padding-left: 56px;
           max-width: 644px;
+          @include sm{
+            padding-left: 0;
+          }
 
           h1 {
             padding-bottom: 19px;
           }
 
-          p {
-            padding-bottom: 44px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #000000;
+
+          .mb-lg-5 {
+            margin-bottom: 44px;
+
+
           }
 
           a {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-            text-transform: capitalize;
-            color: #000000;
             border: 1px solid #000000;
             border-radius: 200px;
             padding: 14px 53px;
             max-width: 170px;
           }
         }
-
-        div {
-          img {
-            display: block;
-            width: 100%;
-          }
-        }
       }
 
       .owl-nav {
+        display: block;
         .owl-prev {
+
           position: absolute;
           top: 49%;
-          left: 1%;
+          left: 2%;
 
           &:before {
             content: "\f053";
@@ -193,7 +227,7 @@ header {
         .owl-next {
           position: absolute;
           top: 49%;
-          right: 1%;
+          right: 2%;
 
           &:before {
             content: "\f054";
@@ -206,13 +240,14 @@ header {
       }
 
       .owl-dots {
+        display: block;
         position: absolute;
-        bottom: 3%;
+        bottom: 2%;
         left: 20%;
-        width: 100%;
+        width: 70%;
 
         .owl-dot {
-          width: 17%;
+          width: 23%;
           margin: 0 10px;
           height: 3px;
           background-color: black;
@@ -246,15 +281,25 @@ header {
     .row {
       .categories {
         .categories-box-1 {
-
           .font-32px-RP {
             max-width: 192px;
           }
         }
-      }
+        .categories-box-2{
+          .img-box-2{
+            max-width: 381px;
+          }
+        }
+        .mb-lg-3{
+          margin-bottom: 72px;
+        }
+        .categories-box-2{
 
-      .position-relative {
-        top: 22px;
+        }
+      }
+      .categories-box-3 .img-box, .categories-box-4 .img-box{
+        margin-bottom: 22px;
+        max-width: 312px;
       }
     }
   }
@@ -283,13 +328,16 @@ header {
 .best-around {
   .container {
     .row {
+
       .card {
         border-radius: 16px;
         background-color: #F8F9FA;
 
-        &-body {
-          a:hover {
-
+        .card-body{
+          .text-box{
+            a{
+              width: 190px;
+            }
           }
         }
 
@@ -361,8 +409,38 @@ header {
 
         .form-box {
           .input-group {
-
           }
+          .input-group-append{
+            .btn-dark{
+              color: white;
+              background-color: black;
+              transition: .3s;
+              &:hover{
+                background-color: #a1a1a1;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #F8F9FA;
+  .container{
+    .row{
+      .footer-logo{
+        .img-box{
+          max-width: 182px;
+        }
+      }
+      .footer-box{
+        a:after{
+          content: url("../images/arrow.svg");
+          position: relative;
+          top: 6px;
         }
       }
     }
